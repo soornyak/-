@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browser-agent-task"
+version = "0.9.1"
+description = "Autonomous browser agent with tool calling and bounded memory"
+requires-python = ">=3.11"
+dependencies = ["playwright>=1.51,<2", "jsonschema>=4.20,<5", "rich>=13,<15", "python-dotenv>=1,<2"]
+
+[project.scripts]
+browser-agent = "agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agent*"]

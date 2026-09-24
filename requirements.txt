@@ -1,0 +1,4 @@
+playwright==1.51.0
+jsonschema==4.26.0
+rich==14.3.4
+python-dotenv==1.2.3

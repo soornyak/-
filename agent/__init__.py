@@ -1,0 +1,1 @@
+"""Browser automation test assignment."""
